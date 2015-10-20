@@ -3,17 +3,18 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>26b5f999-0dab-421b-8108-f5f37d50287f</ProjectGuid>
+    <ProjectGuid>e6512e09-3f20-4f2f-b1e7-ce8364b6b148</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>c:\Mantid\scripts\test\RunDescriptorTest.py</StartupFile>
-    <SearchPath>c:\Mantid\scripts\test;c:\Mantid\_builds\br_master\bin\Release;C:\Mantid\Third_Party\lib\win64;c:\Mantid\Testing\SystemTests\tests\analysis;c:\Mantid\scripts\Inelastic</SearchPath>
-    <WorkingDirectory>c:\Mantid\scripts\test</WorkingDirectory>
+    <StartupFile>c:\Mantid\Framework\PythonInterface\test\python\mantid\api\MatrixWorkspaceTest.py</StartupFile>
+    <SearchPath>c:\Mantid\_builds\br_master\bin\Release;c:\Mantid\scripts\Inelastic;C:\Mantid\Third_Party\lib\win64</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>RunPropertyTest</Name>
-    <RootNamespace>RunPropertyTest</RootNamespace>
+    <Name>test_MatrixWS</Name>
+    <RootNamespace>test_MatrixWS</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
-    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterPath>c:\Mantid\_builds\br_master\bin\Release\python.exe</InterpreterPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,6 +24,9 @@
     <DebugSymbols>true</DebugSymbols>
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="test_MatrixWS.py" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>

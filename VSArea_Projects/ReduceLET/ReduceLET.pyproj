@@ -5,19 +5,18 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a7a5f658-0191-4c55-a995-931b9be33661</ProjectGuid>
     <ProjectHome>D:\Data\isis\Let\June2013\</ProjectHome>
-    <StartupFile>d:\Data\Mantid_Testing\15_10_02\SumRunsTatiana.py</StartupFile>
-    <SearchPath>c:\Mantid\Code\builds\br_master\bin\Release;c:\Mantid\Code\Mantid\scripts\Inelastic;c:\Mantid\Code\Third_Party\lib\win64;d:\Data\MatidScripsPublicRepository\direct_inelastic\ISIS\qtiGenie</SearchPath>
+    <StartupFile>c:\Mantid\Testing\SystemTests\tests\analysis\ISIS_LETReduction.py</StartupFile>
+    <SearchPath>c:\Mantid\scripts\Inelastic;c:\Mantid\_builds\br_master\bin\Release;c:\Mantid\Third_Party\lib\win64;c:\Mantid\Testing\SystemTests\tests\analysis;d:\Data\MatidScripsPublicRepository\direct_inelastic\ISIS\qtiGenie</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <InterpreterId>00000000-0000-0000-0000-000000000000</InterpreterId>
-    <InterpreterVersion>
-    </InterpreterVersion>
+    <InterpreterId>{1e3a12e0-0644-44c9-b078-9d1b6368e04e}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
     <Name>ReduceLET</Name>
     <RootNamespace>ReduceLET</RootNamespace>
     <IsWindowsApplication>False</IsWindowsApplication>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
     <CommandLineArguments />
-    <InterpreterPath>c:\Mantid\Code\builds\br_master\bin\Release\python.exe </InterpreterPath>
+    <InterpreterPath>c:\Mantid\_builds\br_master\bin\Release\python.exe </InterpreterPath>
     <InterpreterArguments />
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
@@ -33,6 +32,9 @@
     <Compile Include="..\2013_12\PrAl3_absolute.py" />
     <Compile Include="iliad_merlin_event_gd_sum.py" />
     <Compile Include="module1.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{1e3a12e0-0644-44c9-b078-9d1b6368e04e}\2.7" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
 </Project>
