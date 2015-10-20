@@ -4,10 +4,10 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>7de7d019-7039-4e37-9aab-8bc165b6acb0</ProjectGuid>
-    <ProjectHome>c:\Mantid\Code\Mantid\scripts\test\</ProjectHome>
-    <StartupFile>c:\Mantid\Code\Mantid\scripts\test\DirectEnergyConversionTest.py</StartupFile>
-    <SearchPath>c:\Mantid\Code\builds\br_master\bin\Release;c:\Mantid\Code\Mantid\scripts\Inelastic;c:\Mantid\Code\Third_Party\lib\win64</SearchPath>
-    <WorkingDirectory>c:\Mantid\Code\Mantid\scripts\Inelastic</WorkingDirectory>
+    <ProjectHome>c:\Mantid\scripts\test\</ProjectHome>
+    <StartupFile>c:\Mantid\scripts\test\DirectEnergyConversionTest.py</StartupFile>
+    <SearchPath>c:\Mantid\_builds\br_master\bin\Release;c:\Mantid\scripts\Inelastic;c:\Mantid\Third_Party\lib\win64</SearchPath>
+    <WorkingDirectory>c:\Mantid\scripts\Inelastic</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <InterpreterId>00000000-0000-0000-0000-000000000000</InterpreterId>
     <InterpreterVersion>
@@ -17,7 +17,7 @@
     <IsWindowsApplication>False</IsWindowsApplication>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
     <CommandLineArguments />
-    <InterpreterPath>c:\programming\Python27\python.exe</InterpreterPath>
+    <InterpreterPath>c:\Mantid\_builds\br_master\bin\Release\python.exe</InterpreterPath>
     <InterpreterArguments />
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
