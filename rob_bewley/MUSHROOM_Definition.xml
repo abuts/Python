@@ -16,26 +16,26 @@
   <indirect-neutronic-positions />
 </defaults>
 
-
-<component type="analyser">
+<!--  End of header, start of generated data --><!-- ANALYZERS BLOCK START         -->
+   <component type="analyser">
     <location/>
-</component>
-<type name="analyser">
-   <component idlist="tube1"  type="tube1">
-        <location/>
    </component>
-   <component idlist="tube2"  type="tube2">
+    <type name="analyser">
+     <component idlist="tube1"  type="tube1">
         <location/>
-   </component>
-</type>
- <idlist idname="tube1">
+     </component>
+     <component idlist="tube2"  type="tube2">
+        <location/>
+     </component>
+    </type>
+    <idlist idname="tube1">
         <id start="1000" end="1137" />
      </idlist>
     <idlist idname="tube2">
         <id start="2000" end="2137" />
      </idlist>
-     
-   <type name="tube1">
+<!-- ANALYZERS BLOCK END        -->
+<type name="tube1">
      <component type="pixel">
        <location name="1001" x="0.320000" y="0.000000" z="0.000000">
          <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
@@ -865,7 +865,7 @@
        <parameter name="Efixed">  <value val="2.824000"/> </parameter>
      </component>
 </type>
-   <type name="tube2">
+<type name="tube2">
      <component type="pixel">
        <location name="2001" x="0.320000" y="0.080000" z="0.000000">
          <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
@@ -1695,8 +1695,7 @@
        <parameter name="Efixed">  <value val="2.824000"/> </parameter>
      </component>
 </type>
-
-
+<!--  End of generated data, start of generic footer -->
 
 
   <type name="pixel" is="detector">
