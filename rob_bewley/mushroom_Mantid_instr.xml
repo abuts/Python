@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IDF generated using McStas McDisplay and the Mantid backend -->
+<!-- For help on the notation used to specify an Instrument Definition File see http://www.mantidproject.org/IDF -->
+<instrument name="mushroom_Mantid.exe" valid-from   ="1900-01-31 23:59:59"
+valid-to     ="2100-01-31 23:59:59" last-modified="Wed Jun  5 15:24:44 2019">
+<defaults>
+	<length unit="meter"/>
+	<angle unit="degree"/>
+	<reference-frame>
+		<!-- The z-axis is set parallel to and in the direction of the beam. The y-axis points up and the coordinate system is right handed. -->
+		<along-beam axis="z"/>
+		<pointing-up axis="y"/>
+		<handedness val="right"/>
+	</reference-frame>
+		<default-view axis-view="z-"/>
+	</defaults>
+
+<!-- LIST OF PHYSICAL COMPONENTS (which the instrument consists of) -->
+
+<type name="Othercomp"></type>
+
+<component type="sourceMantid-type" name="sourceMantid">
+<location x=" 0" y=" 0" z=" 0"  />
+</component>
+
+<component type="sampleMantid-type" name="sampleMantid">
+<location x=" 0" y=" 0" z=" 40"  />
+</component>
+
+
+<type name="line-sourceMantid-0" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="-0.06" y="-0.06" z="0" />
+		<axis x="0.12" y="0" z="0" />
+		<radius val="0.005" />
+		<height val="0.12" />
+	</cylinder >
+</type>
+
+<type name="line-sourceMantid-1" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="0.06" y="-0.06" z="0" />
+		<axis x="0" y="0.12" z="0" />
+		<radius val="0.005" />
+		<height val="0.12" />
+	</cylinder >
+</type>
+
+<type name="line-sourceMantid-2" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="0.06" y="0.06" z="0" />
+		<axis x="-0.12" y="0" z="0" />
+		<radius val="0.005" />
+		<height val="0.12" />
+	</cylinder >
+</type>
+
+<type name="line-sourceMantid-3" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="-0.06" y="0.06" z="0" />
+		<axis x="0" y="-0.12" z="0" />
+		<radius val="0.005" />
+		<height val="0.12" />
+	</cylinder >
+</type>
+
+<type name="line-sourceMantid-4" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="-0.5" y="0" z="-1.02552e-010" />
+		<axis x="0.00558500000000001" y="0" z="0.074521100102552" />
+		<radius val="0.005" />
+		<height val="0.074730091566213" />
+	</cylinder >
+</type>
+
+<type name="line-sourceMantid-5" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="-0.477786" y="0" z="0.147378" />
+		<axis x="0.027302" y="0" z="0.069564" />
+		<radius val="0.005" />
+		<height val="0.0747298420980534" />
+	</cylinder >
+</type>
+
+<type name="line-sourceMantid-6" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="-0.413119" y="0" z="0.28166" />
+		<axis x="0.046593" y="0" z="0.058426" />
+		<radius val="0.005" />
+		<height val="0.0747295465328139" />
+	</cylinder >
+</type>
+
+<type name="line-sourceMantid-7" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="-0.311745" y="0" z="0.390916" />
+		<axis x="0.061745" y="0" z="0.042097" />
+		<radius val="0.005" />
+		<height val="0.074730197604449" />
+	</cylinder >
+</type>
+
+<type name="line-sourceMantid-8" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="-0.182671" y="0" z="0.465437" />
+		<axis x="0.071411" y="0" z="0.022027" />
+		<radius val="0.005" />
+		<height val="0.0747309818616081" />
+	</cylinder >
+</type>
+
+<type name="line-sourceMantid-9" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="-0.037365" y="0" z="0.498602" />
+		<axis x="0.07473" y="0" z="0" />
+		<radius val="0.005" />
+		<height val="0.07473" />
+	</cylinder >
+</type>
+
+<type name="line-sourceMantid-10" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="0.11126" y="0" z="0.487464" />
+		<axis x="0.071411" y="0" z="-0.022027" />
+		<radius val="0.005" />
+		<height val="0.0747309818616081" />
+	</cylinder >
+</type>
+
+<type name="line-sourceMantid-11" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="0.25" y="0" z="0.433013" />
+		<axis x="0.061745" y="0" z="-0.042097" />
+		<radius val="0.005" />
+		<height val="0.074730197604449" />
+	</cylinder >
+</type>
+
+<type name="line-sourceMantid-12" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="0.366526" y="0" z="0.340086" />
+		<axis x="0.046593" y="0" z="-0.058426" />
+		<radius val="0.005" />
+		<height val="0.0747295465328139" />
+	</cylinder >
+</type>
+
+<type name="line-sourceMantid-13" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="0.450484" y="0" z="0.216942" />
+		<axis x="0.027302" y="0" z="-0.069564" />
+		<radius val="0.005" />
+		<height val="0.0747298420980534" />
+	</cylinder >
+</type>
+
+<type name="line-sourceMantid-14" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="0.494415" y="0" z="0.0745211" />
+		<axis x="0.00558500000000001" y="0" z="-0.074521100102552" />
+		<radius val="0.005" />
+		<height val="0.074730091566213" />
+	</cylinder >
+</type>
+
+<type name="sourceMantid-type" is="Source" >
+	<component type="line-sourceMantid-0" >
+		<location x="0" y="0" z="0" />
+	</component >
+	<component type="line-sourceMantid-1" >
+		<location x="0" y="0" z="0" />
+	</component >
+	<component type="line-sourceMantid-2" >
+		<location x="0" y="0" z="0" />
+	</component >
+	<component type="line-sourceMantid-3" >
+		<location x="0" y="0" z="0" />
+	</component >
+	<component type="line-sourceMantid-4" >
+		<location x="0" y="0" z="0" />
+	</component >
+	<component type="line-sourceMantid-5" >
+		<location x="0" y="0" z="0" />
+	</component >
+	<component type="line-sourceMantid-6" >
+		<location x="0" y="0" z="0" />
+	</component >
+	<component type="line-sourceMantid-7" >
+		<location x="0" y="0" z="0" />
+	</component >
+	<component type="line-sourceMantid-8" >
+		<location x="0" y="0" z="0" />
+	</component >
+	<component type="line-sourceMantid-9" >
+		<location x="0" y="0" z="0" />
+	</component >
+	<component type="line-sourceMantid-10" >
+		<location x="0" y="0" z="0" />
+	</component >
+	<component type="line-sourceMantid-11" >
+		<location x="0" y="0" z="0" />
+	</component >
+	<component type="line-sourceMantid-12" >
+		<location x="0" y="0" z="0" />
+	</component >
+	<component type="line-sourceMantid-13" >
+		<location x="0" y="0" z="0" />
+	</component >
+	<component type="line-sourceMantid-14" >
+		<location x="0" y="0" z="0" />
+	</component >
+</type>
+
+<type name="line-sampleMantid-0" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="-0.005" y="-0.005" z="0" />
+		<axis x="0" y="0.01" z="0" />
+		<radius val="0.005" />
+		<height val="0.01" />
+	</cylinder >
+</type>
+
+<type name="line-sampleMantid-1" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="0.005" y="-0.005" z="0" />
+		<axis x="0" y="0.01" z="0" />
+		<radius val="0.005" />
+		<height val="0.01" />
+	</cylinder >
+</type>
+
+<type name="line-sampleMantid-2" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="0" y="-0.005" z="-0.005" />
+		<axis x="0" y="0.01" z="0" />
+		<radius val="0.005" />
+		<height val="0.01" />
+	</cylinder >
+</type>
+
+<type name="line-sampleMantid-3" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="0" y="-0.005" z="0.005" />
+		<axis x="0" y="0.01" z="0" />
+		<radius val="0.005" />
+		<height val="0.01" />
+	</cylinder >
+</type>
+
+<type name="line-sampleMantid-4" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="-0.004" y="-0.005" z="0" />
+		<axis x="0" y="0.01" z="0" />
+		<radius val="0.005" />
+		<height val="0.01" />
+	</cylinder >
+</type>
+
+<type name="line-sampleMantid-5" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="0.004" y="-0.005" z="0" />
+		<axis x="0" y="0.01" z="0" />
+		<radius val="0.005" />
+		<height val="0.01" />
+	</cylinder >
+</type>
+
+<type name="line-sampleMantid-6" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="0" y="-0.005" z="-0.004" />
+		<axis x="0" y="0.01" z="0" />
+		<radius val="0.005" />
+		<height val="0.01" />
+	</cylinder >
+</type>
+
+<type name="line-sampleMantid-7" >
+	<cylinder id="dummy" >
+		<centre-of-bottom-base x="0" y="-0.005" z="0.004" />
+		<axis x="0" y="0.01" z="0" />
+		<radius val="0.005" />
+		<height val="0.01" />
+	</cylinder >
+</type>
+
+<type name="sampleMantid-type" is="SamplePos" >
+	<component type="line-sampleMantid-0" >
+		<location x="0" y="0" z="0" />
+	</component >
+	<component type="line-sampleMantid-1" >
+		<location x="0" y="0" z="0" />
+	</component >
+	<component type="line-sampleMantid-2" >
+		<location x="0" y="0" z="0" />
+	</component >
+	<component type="line-sampleMantid-3" >
+		<location x="0" y="0" z="0" />
+	</component >
+	<component type="line-sampleMantid-4" >
+		<location x="0" y="0" z="0" />
+	</component >
+	<component type="line-sampleMantid-5" >
+		<location x="0" y="0" z="0" />
+	</component >
+	<component type="line-sampleMantid-6" >
+		<location x="0" y="0" z="0" />
+	</component >
+	<component type="line-sampleMantid-7" >
+		<location x="0" y="0" z="0" />
+	</component >
+</type>
+
+<component type="MonNDtype-0" name="nD_Mantid_1" idstart="0" idfillbyfirst="x" idstepbyrow=" 138">
+	<location x=" 0.4" y=" -0.9" z=" 40"  rot="90" axis-x="1" axis-y="3.061515e-017" axis-z="3.061515e-017" />
+</component>
+
+<type name="MonNDtype-0" is="RectangularDetector" type="pixel-0"
+	xpixels=" 138" xstart="  0" xstep="0.00802919708029197"
+	ypixels=" 2" ystart=" -0.02" ystep="0.04">
+</type>
+<type is="detector" name="pixel-0">
+	<cuboid id="pixel-shape-0">
+		<left-front-bottom-point x="0.00401459854014599" y="-0.02" z="0.0" />
+		<left-front-top-point x="0.00401459854014599" y="-0.02" z="0.00005" />
+		<left-back-bottom-point x="-0.00401459854014599" y="-0.02" z="0.0" />
+		<right-front-bottom-point x="0.00401459854014599" y="0.02" z="0.0" />
+	</cuboid>
+	<algebra val="pixel-shape-0" />
+</type>
+
+</instrument>

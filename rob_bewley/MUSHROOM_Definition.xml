@@ -1,0 +1,1759 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<instrument name="MUSHROOM" valid-from   ="1900-01-31 23:59:59"
+                                      valid-to     ="2100-01-31 23:59:59"
+                                      last-modified="2011-08-25T12:00:00">
+
+<!-- XY detector -->
+<defaults>
+  <length unit="cm" />
+  <angle unit="degree" />
+  <reference-frame>
+    <along-beam axis="z" />
+    <pointing-up axis="y" />
+    <handedness val="right" />
+  </reference-frame>
+  <indirect-neutronic-positions />
+</defaults>
+
+
+<component type="analyser">
+    <location/>
+</component>
+<type name="analyser">
+   <component idlist="tube1"  type="tube1">
+        <location/>
+   </component>
+   <component idlist="tube2"  type="tube2">
+        <location/>
+   </component>
+</type>
+ <idlist idname="tube1">
+        <id start="1000" end="1137" />
+     </idlist>
+    <idlist idname="tube2">
+        <id start="2000" end="2137" />
+     </idlist>
+     
+   <type name="tube1">
+     <component type="pixel">
+       <location name="1001" x="0.320000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1002" x="0.400000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1003" x="0.480000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1004" x="0.560000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1005" x="0.640000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1006" x="0.720000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1007" x="0.800000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1008" x="0.880000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1009" x="0.960000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1010" x="1.040000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1011" x="1.120000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1012" x="1.200000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1013" x="1.280000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1014" x="1.360000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1015" x="1.440000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1016" x="1.520000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1017" x="1.600000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1018" x="1.680000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1019" x="1.760000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1020" x="1.840000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1021" x="1.920000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1022" x="2.000000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1023" x="2.080000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1024" x="2.160000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1025" x="2.240000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1026" x="2.320000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1027" x="2.400000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1028" x="2.480000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1029" x="2.560000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1030" x="2.640000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1031" x="2.720000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1032" x="2.800000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1033" x="2.880000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1034" x="2.960000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1035" x="3.040000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1036" x="3.120000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1037" x="3.200000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1038" x="3.280000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1039" x="3.360000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1040" x="3.440000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1041" x="3.520000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1042" x="3.600000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1043" x="3.680000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1044" x="3.760000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1045" x="3.840000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1046" x="3.920000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1047" x="4.000000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1048" x="4.080000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1049" x="4.160000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1050" x="4.240000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1051" x="4.320000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1052" x="4.400000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1053" x="4.480000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1054" x="4.560000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1055" x="4.640000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1056" x="4.720000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1057" x="4.800000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1058" x="4.880000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1059" x="4.960000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1060" x="5.040000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1061" x="5.120000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1062" x="5.200000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1063" x="5.280000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1064" x="5.360000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1065" x="5.440000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1066" x="5.520000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1067" x="5.600000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1068" x="5.680000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1069" x="5.760000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1070" x="5.840000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1071" x="5.920000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1072" x="6.000000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1073" x="6.080000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1074" x="6.160000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1075" x="6.240000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1076" x="6.320000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1077" x="6.400000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1078" x="6.480000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1079" x="6.560000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1080" x="6.640000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1081" x="6.720000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1082" x="6.800000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1083" x="6.880000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1084" x="6.960000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1085" x="7.040000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1086" x="7.120000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1087" x="7.200000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1088" x="7.280000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1089" x="7.360000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1090" x="7.440000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1091" x="7.520000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1092" x="7.600000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1093" x="7.680000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1094" x="7.760000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1095" x="7.840000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1096" x="7.920000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1097" x="8.000000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1098" x="8.080000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1099" x="8.160000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1100" x="8.240000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1101" x="8.320000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1102" x="8.400000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1103" x="8.480000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1104" x="8.560000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1105" x="8.640000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1106" x="8.720000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1107" x="8.800000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1108" x="8.880000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1109" x="8.960000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1110" x="9.040000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1111" x="9.120000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1112" x="9.200000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1113" x="9.280000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1114" x="9.360000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1115" x="9.440000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1116" x="9.520000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1117" x="9.600000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1118" x="9.680000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1119" x="9.760000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1120" x="9.840000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1121" x="9.920000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1122" x="10.000000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1123" x="10.080000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1124" x="10.160000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1125" x="10.240000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1126" x="10.320000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1127" x="10.400000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1128" x="10.480000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1129" x="10.560000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1130" x="10.640000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1131" x="10.720000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1132" x="10.800000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1133" x="10.880000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1134" x="10.960000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1135" x="11.040000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1136" x="11.120000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1137" x="11.200000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="1138" x="11.280000" y="0.000000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+</type>
+   <type name="tube2">
+     <component type="pixel">
+       <location name="2001" x="0.320000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2002" x="0.400000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2003" x="0.480000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2004" x="0.560000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2005" x="0.640000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2006" x="0.720000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2007" x="0.800000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2008" x="0.880000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2009" x="0.960000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2010" x="1.040000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2011" x="1.120000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2012" x="1.200000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2013" x="1.280000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2014" x="1.360000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2015" x="1.440000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2016" x="1.520000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2017" x="1.600000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2018" x="1.680000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2019" x="1.760000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2020" x="1.840000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2021" x="1.920000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2022" x="2.000000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2023" x="2.080000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2024" x="2.160000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2025" x="2.240000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2026" x="2.320000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2027" x="2.400000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2028" x="2.480000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2029" x="2.560000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2030" x="2.640000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2031" x="2.720000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2032" x="2.800000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2033" x="2.880000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2034" x="2.960000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2035" x="3.040000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2036" x="3.120000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2037" x="3.200000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2038" x="3.280000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2039" x="3.360000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2040" x="3.440000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2041" x="3.520000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2042" x="3.600000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2043" x="3.680000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2044" x="3.760000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2045" x="3.840000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2046" x="3.920000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2047" x="4.000000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2048" x="4.080000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2049" x="4.160000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2050" x="4.240000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2051" x="4.320000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2052" x="4.400000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2053" x="4.480000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2054" x="4.560000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2055" x="4.640000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2056" x="4.720000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2057" x="4.800000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2058" x="4.880000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2059" x="4.960000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2060" x="5.040000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2061" x="5.120000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2062" x="5.200000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2063" x="5.280000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2064" x="5.360000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2065" x="5.440000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2066" x="5.520000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2067" x="5.600000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2068" x="5.680000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2069" x="5.760000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2070" x="5.840000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2071" x="5.920000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2072" x="6.000000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2073" x="6.080000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2074" x="6.160000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2075" x="6.240000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2076" x="6.320000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2077" x="6.400000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2078" x="6.480000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2079" x="6.560000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2080" x="6.640000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2081" x="6.720000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2082" x="6.800000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2083" x="6.880000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2084" x="6.960000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2085" x="7.040000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2086" x="7.120000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2087" x="7.200000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2088" x="7.280000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2089" x="7.360000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2090" x="7.440000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2091" x="7.520000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2092" x="7.600000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2093" x="7.680000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2094" x="7.760000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2095" x="7.840000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2096" x="7.920000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2097" x="8.000000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2098" x="8.080000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2099" x="8.160000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2100" x="8.240000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2101" x="8.320000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2102" x="8.400000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2103" x="8.480000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2104" x="8.560000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2105" x="8.640000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2106" x="8.720000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2107" x="8.800000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2108" x="8.880000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2109" x="8.960000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2110" x="9.040000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2111" x="9.120000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2112" x="9.200000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2113" x="9.280000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2114" x="9.360000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2115" x="9.440000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2116" x="9.520000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2117" x="9.600000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2118" x="9.680000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2119" x="9.760000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2120" x="9.840000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2121" x="9.920000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2122" x="10.000000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2123" x="10.080000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2124" x="10.160000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2125" x="10.240000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2126" x="10.320000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2127" x="10.400000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2128" x="10.480000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2129" x="10.560000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2130" x="10.640000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2131" x="10.720000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2132" x="10.800000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2133" x="10.880000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2134" x="10.960000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2135" x="11.040000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2136" x="11.120000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2137" x="11.200000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+     <component type="pixel">
+       <location name="2138" x="11.280000" y="0.080000" z="0.000000">
+         <neutronic p="5.579590" r="1.592660e+00" t="92.848830"/>
+       </location>
+       <parameter name="Efixed">  <value val="2.824000"/> </parameter>
+     </component>
+</type>
+
+
+
+
+  <type name="pixel" is="detector">
+    <cylinder id="cyl-approx">
+       <centre-of-bottom-base r="0.0" t="0.0" p="0.0" />
+       <axis x="0.0" y="0.08" z="0.0" />
+       <radius val="   0.04" />
+       <height val="   0.08" />
+    </cylinder>
+    <algebra val="cyl-approx" />
+    </type>
+
+<!-- Sample 'neutronic' pixel -->
+<type is="detector" name="banana">
+  <cuboid id="pixel-shape">
+    <left-front-bottom-point y="-0.2" x="-0.2" z="0.0"/>
+    <left-front-top-point y="0.2" x="-0.2" z="0.0"/>
+    <left-back-bottom-point y="-0.2" x="-0.2" z="-0.1"/>
+    <right-front-bottom-point y="-0.2" x="0.2" z="0.0"/>
+  </cuboid>
+  <algebra val="pixel-shape"/>
+</type>
+
+<!-- monitor -->
+<component type="monitor" idlist="monitor">
+  <location z="-1">
+    <neutronic z="-1" /> <!-- Even if the neutronic is in the same place, you have to specify it again (for detectors/monitor) -->
+  </location>
+</component>
+
+<type name="monitor" is="monitor" />
+<idlist idname="monitor">
+  <id val="1" />  
+</idlist>
+
+<!--  Source and sample-position components and their types -->
+<type name="moderator" is="Source">
+  <properties />
+</type>
+<component type="moderator">
+    <location z="-40.0"/>
+</component>
+
+<component type="sample-position">
+    <location x="0.0" y="0.0" z="0.0"/>
+</component>
+<type is="SamplePos" name="sample-position"/>
+  
+
+<!-- Sample-position types -->
+<type name="nickel-holder" is="SamplePos">
+     <properties />
+     <sphere id="spere-aprox">
+       <centre x="0.0"  y="0.0" z="0.0" />
+       <radius val="0.03" />
+     </sphere>
+     <algebra val="spere-aprox" />
+</type>
+
+</instrument>
