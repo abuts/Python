@@ -2,11 +2,11 @@ function fh_out = write_musroom_monitors(neutronic_pos_info,mon_file_name)
 % Function saves the Mushroom monitors information in the form of the
 % format, recognized by Mantid.
 %
-Npix_per_tube = 138;
-x_step = 0.08;
-x_min = 0.4-x_step;
-y_min = 0;
-y_step = 0.08;
+Npix_per_tube = 75;
+x_step = 0.016;
+x_min = 0;
+y_min = -1.196;
+y_step = 0.016;
 tube_id_offset = 1000;
 %
 n_pos = size(neutronic_pos_info,1);
@@ -46,8 +46,9 @@ for i=1:n_tubes
         det_id = tube_id+j;
         x = x_min+x_step*(j-1);
         write_pix_component(fh,det_id,x,y,z,neutronic_pos_info(ic,:));
+        ic = ic+1;
     end
-    footer = sprintf("</type>\n");
+    footer = sprintf('</type>\n');
     fwrite(fh,footer);
     
 end
@@ -65,14 +66,20 @@ function write_pix_component(fh,det_id,x,y,z,neutr_pos)
 header = sprintf('     <component type="pixel">\n');
 footer = sprintf('     </component>\n');
 location_dat    =sprintf('       <location name=\"%d\" x=\"%f\" y=\"%f\" z=\"%f\">\n',det_id,x,y,z);
-neutronic_dat   =sprintf('         <neutronic p=\"%f\" r=\"%d\" t=\"%f\"/>\n',neutr_pos(4),neutr_pos(2),neutr_pos(3));
+neutronic_dat   =sprintf('       <neutronic p=\"%f\" r=\"%d\" t=\"%f\" type = \"bead\" />\n',neutr_pos(4),neutr_pos(2),neutr_pos(3));
 location_close = sprintf('       </location>\n');
 efix_dat     =   sprintf('       <parameter name=\"Efixed\">  <value val=\"%f\"/> </parameter>\n',neutr_pos(5));
 fwrite(fh,header);
 fwrite(fh,location_dat);
-fwrite(fh,neutronic_dat);
+% avoid writing neutronic positions for detectors with Efix=0;
+if neutr_pos(5)>0
+    fwrite(fh,neutronic_dat);
+end
 fwrite(fh,location_close);
-fwrite(fh,efix_dat);
+% avoid writing Efix for detectors with Efix=0;
+if neutr_pos(5)>0
+    fwrite(fh,efix_dat);
+end
 fwrite(fh,footer);
 
 

@@ -3,11 +3,11 @@ function write_mushroom_idf()
 % neutronic positions of the Mushroom detectors.
 %
 % DEFININTIONS:
-working_dir = pwd;
+working_dir = fileparts(mfilename('fullpath'));
 % file with neutronic detector positions. 
-det_dat_file = fullfile(working_dir,'MUSHROOM_det_cor_pos_test2.dat');
+det_dat_file = fullfile(working_dir,'det_cor_pos_test2.dat');
 % file with detectors efixed. 
-det_efix_file = fullfile(working_dir,'MUSHROOM_det_Ef.dat');
+det_efix_file = fullfile(working_dir,'det_Ef.dat');
 %
 IDF_head_file = fullfile(working_dir,'MUSHROOM_IDF_head.xml');
 IDF_foot_file = fullfile(working_dir,'MUSHROOM_IDF_foot.xml');
