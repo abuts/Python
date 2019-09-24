@@ -1,0 +1,61 @@
+<!--  End of generated data, start of generic footer -->
+
+
+  <type name="pixel" is="detector">
+    <cylinder id="cyl-approx">
+       <centre-of-bottom-base r="0.0" t="0.0" p="0.0" />
+       <axis x="0.0" y="0.08" z="0.0" />
+       <radius val="   0.04" />
+       <height val="   0.08" />
+    </cylinder>
+    <algebra val="cyl-approx" />
+    </type>
+
+<!-- Sample 'neutronic' pixel -->
+<type is="detector" name="banana">
+  <cuboid id="pixel-shape">
+    <left-front-bottom-point y="-0.2" x="-0.2" z="0.0"/>
+    <left-front-top-point y="0.2" x="-0.2" z="0.0"/>
+    <left-back-bottom-point y="-0.2" x="-0.2" z="-0.1"/>
+    <right-front-bottom-point y="-0.2" x="0.2" z="0.0"/>
+  </cuboid>
+  <algebra val="pixel-shape"/>
+</type>
+
+<!-- monitor -->
+<component type="monitor" idlist="monitor">
+  <location z="-1">
+    <neutronic z="-1" /> <!-- Even if the neutronic is in the same place, you have to specify it again (for detectors/monitor) -->
+  </location>
+</component>
+
+<type name="monitor" is="monitor" />
+<idlist idname="monitor">
+  <id val="1" />  
+</idlist>
+
+<!--  Source and sample-position components and their types -->
+<type name="moderator" is="Source">
+  <properties />
+</type>
+<component type="moderator">
+    <location z="-40.0"/>
+</component>
+
+<component type="sample-position">
+    <location x="0.0" y="0.0" z="0.0"/>
+</component>
+<type is="SamplePos" name="sample-position"/>
+  
+
+<!-- Sample-position types -->
+<type name="nickel-holder" is="SamplePos">
+     <properties />
+     <sphere id="spere-aprox">
+       <centre x="0.0"  y="0.0" z="0.0" />
+       <radius val="0.03" />
+     </sphere>
+     <algebra val="spere-aprox" />
+</type>
+
+</instrument>
