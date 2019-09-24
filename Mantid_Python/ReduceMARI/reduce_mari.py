@@ -1,15 +1,17 @@
-from mantid import config
-from ReduceMARI_2016_1 import *
+import sys
 import time
 import os
 import datetime
-import sys
+
+print( sys.path)
+from mantid import config
+from MARIReduction_Sample import *
 try:
     #Note: due to the mantid-python implementation, one needs to run this 
     #script in Mantid  script window  TWICE!!!  to deploy the the changes made to MARIReduction_2016_1.py file.
-    reload(sys.modules['ReduceMARI_2016_1'])
+    reload(sys.modules['MARIReduction_Sample'])
 except:
-    print "*** WARNING can not reload MARIReduction_2016_1 file"
+    print "*** WARNING can not reload MARIReduction_Sample file"
     pass
 
 # Run number and Ei
@@ -21,7 +23,8 @@ ei=50
 wbvan=21334
 # Default save directory
 #config['defaultsave.directory'] = '/instrument/MARI/RBNumber/RB1610190' #data_dir 
-data_dir = r'd:\Data\Python_proj\MantidMain\ReduceMARI'
+data_dir =os.path.dirname(os.path.realpath(__file__));
+config['defaultsave.directory'] = data_dir;
     #config.appendDataSearchDir(map_mask_dir)
 config.appendDataSearchDir(data_dir)
 

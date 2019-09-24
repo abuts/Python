@@ -4,13 +4,11 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ea55edfa-8397-4b64-a035-372e8261e23a</ProjectGuid>
-    <StartupFile>d:\Data\Python_proj\Mantid_Python\ReduceMARI\reduce_mari.py</StartupFile>
+    <StartupFile>reduce_mari.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <InterpreterId>{bba9b81f-c745-4c7c-a04b-86b47e034eb6}</InterpreterId>
-    <InterpreterVersion>2.7</InterpreterVersion>
     <Name>ReduceMARI</Name>
     <RootNamespace>ReduceMARI</RootNamespace>
     <IsWindowsApplication>False</IsWindowsApplication>
@@ -19,8 +17,9 @@
     <InterpreterPath>c:\Mantid\external\src\ThirdParty\lib\python2.7\python.exe</InterpreterPath>
     <InterpreterArguments />
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
-    <Environment>PATH=c:\Mantid\_builds\br_master\bin\Release;c:\Mantid\external\src\ThirdParty\bin;c:\Mantid\external\src\ThirdParty\lib\qt4\bin;c:\Mantid\external\src\ThirdParty\lib\qt4\lib;c:\Mantid\_builds\br_master\bin\Release\PVPlugins\PVPlugins;c:\Programming\Paraview_Dev\bin\Release;
-PYTHONPATH=c:/Mantid/_builds/br_master/bin/Release;c:/Mantid/_builds/br_master/bin/Release/mantid;c:/Mantid/scripts/Inelastic;c:\Mantid\Testing\SystemTests\lib\systemtests;c:\Mantid\Testing\SystemTests\tests\analysis;d:/Data/Mantid_ScriptRepo_eqPublicRepo/direct_inelastic/ISIS/qtiGenie</Environment>
+    <Environment>PATH=c:\Mantid\_builds\br_master\bin\Release;c:\Mantid\external\src\ThirdParty\bin;c:\Mantid\external\src\ThirdParty\mingw;c:\Mantid\external\src\ThirdParty\lib\python2.7;c:\Mantid\external\src\ThirdParty\lib\qt5\plugins;c:\Mantid\external\src\ThirdParty\lib\qt4\bin;c:\Mantid\external\src\ThirdParty\lib\qt5\bin;c:\Mantid\external\src\ThirdParty\lib\qt4\lib;c:\Mantid\external\src\ThirdParty\lib\qt5\lib;
+PYTHONPATH=c:\Mantid\_builds\br_master\bin\Release;c:\Mantid\scripts;c:\mprogs\DirectInelasticUserScripts\MARI;c:\Mantid\Framework\PythonInterface;c:\Mantid\qt\applications\workbench;c:\Mantid\qt\widgets;c:\Mantid\qt\python;c:\Mantid\external\src\ThirdParty\lib;c:\Mantid\external\src\ThirdParty\lib\python2.7;c:\Mantid\scripts\Inelastic\Direct;c:\Mantid\Testing\SystemTests\scripts;c:\Mantid\Testing\SystemTests\scripts\performance;c:\Mantid\Testing\SystemTests\lib\systemtests;c:\Mantid\Testing\SystemTests\tests\analysis;c:\mprogs\DirectInelasticUserScripts\ISIS\qtiGenie;</Environment>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,12 +31,20 @@ PYTHONPATH=c:/Mantid/_builds/br_master/bin/Release;c:/Mantid/_builds/br_master/b
   </PropertyGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
-    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
   <ItemGroup>
-    <InterpreterReference Include="{55b03ede-8c5d-4fce-b889-29a02cde6fe0}\2.7" />
-    <InterpreterReference Include="{bba9b81f-c745-4c7c-a04b-86b47e034eb6}\2.7" />
+    <Compile Include="reduce_mari.py" />
   </ItemGroup>
-  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>2.7</Version>
+      <Description>env (Python 2.7 (64-bit))</Description>
+      <InterpreterPath>c:\Mantid\external\src\ThirdParty\lib\python2.7\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>c:\Mantid\external\src\ThirdParty\lib\python2.7\python.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>
