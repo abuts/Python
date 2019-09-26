@@ -12,14 +12,14 @@
     </type>
 
 <!-- Sample 'neutronic' pixel -->
-<type is="detector" name="banana">
-  <cuboid id="pixel-shape">
-    <left-front-bottom-point y="-0.2" x="-0.2" z="0.0"/>
-    <left-front-top-point y="0.2" x="-0.2" z="0.0"/>
-    <left-back-bottom-point y="-0.2" x="-0.2" z="-0.1"/>
-    <right-front-bottom-point y="-0.2" x="0.2" z="0.0"/>
-  </cuboid>
-  <algebra val="pixel-shape"/>
+<type is="detector" name="bead">
+    <cylinder id="cyl-approx">
+       <centre-of-bottom-base r="0.0" t="0.0" p="0.0" />
+       <axis x="0.0" y="0.02" z="0.0" />
+       <radius val="   0.01" />
+       <height val="   0.02" />
+    </cylinder>
+    <algebra val="cyl-approx" />
 </type>
 
 <!-- monitor -->
@@ -29,9 +29,10 @@
   </location>
 </component>
 
+<!-- let's make the monitor id equal to (number of tubes)*1000+1000  -->
 <type name="monitor" is="monitor" />
 <idlist idname="monitor">
-  <id val="1" />  
+  <id val="150100" />  
 </idlist>
 
 <!--  Source and sample-position components and their types -->

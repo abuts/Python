@@ -24,7 +24,8 @@ fh = copy_file(IDF_head_file,IDF_fname);
 % The information about correspondence between physical detectors and
 % neutronic detectors is provided within this file. 
 fh = write_musroom_monitors(pos,fh);
-% copy mushroom footer file
+% copy mushroom footer file. Do not forget to manually modify monitor ID when number
+% of tubes have changed to make monitor ID higher than the all other detectors
 copy_file(IDF_foot_file,fh);
 
 

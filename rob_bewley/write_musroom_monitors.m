@@ -68,18 +68,22 @@ footer = sprintf('     </component>\n');
 location_dat    =sprintf('       <location name=\"%d\" x=\"%f\" y=\"%f\" z=\"%f\">\n',det_id,x,y,z);
 neutronic_dat   =sprintf('       <neutronic p=\"%f\" r=\"%d\" t=\"%f\" type = \"bead\" />\n',neutr_pos(4),neutr_pos(2),neutr_pos(3));
 location_close = sprintf('       </location>\n');
-efix_dat     =   sprintf('       <parameter name=\"Efixed\">  <value val=\"%f\"/> </parameter>\n',neutr_pos(5));
+efix = neutr_pos(5);
+if efix == 0
+    efix = 1;
+end
+efix_dat     =   sprintf('       <parameter name=\"Efixed\">  <value val=\"%f\"/> </parameter>\n',efix);
 fwrite(fh,header);
 fwrite(fh,location_dat);
 % avoid writing neutronic positions for detectors with Efix=0;
-if neutr_pos(5)>0
+%if neutr_pos(5)>0
     fwrite(fh,neutronic_dat);
-end
+%end
 fwrite(fh,location_close);
 % avoid writing Efix for detectors with Efix=0;
-if neutr_pos(5)>0
+%if neutr_pos(5)>0
     fwrite(fh,efix_dat);
-end
+%end
 fwrite(fh,footer);
 
 

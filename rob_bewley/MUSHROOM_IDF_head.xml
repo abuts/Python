@@ -6,7 +6,7 @@
 
 <!-- XY detector -->
 <defaults>
-  <length unit="cm" />
+  <length unit="meters" />
   <angle unit="degree" />
   <reference-frame>
     <along-beam axis="z" />

@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "test_DirectHelpers", "test_DirectHelpers.pyproj", "{825CBF08-E9C4-43A5-BCE4-06B0F6C3CB8E}"
 EndProject
 Global
@@ -14,5 +16,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9528A6D6-A4FC-4661-A626-EE10EC43B20B}
 	EndGlobalSection
 EndGlobal

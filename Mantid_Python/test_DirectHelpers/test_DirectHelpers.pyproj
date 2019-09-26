@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>825cbf08-e9c4-43a5-bce4-06b0f6c3cb8e</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>c:\Mantid\scripts\test\DirectReductionHelpersTest.py</StartupFile>
+    <StartupFile>DirectReductionHelpersTest.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -13,12 +13,14 @@
     <Name>test_DirectHelpers</Name>
     <RootNamespace>test_DirectHelpers</RootNamespace>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments />
     <InterpreterPath>c:\Mantid\external\src\ThirdParty\lib\python2.7\python.exe</InterpreterPath>
+    <InterpreterArguments />
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <Environment>PATH=c:\Mantid\_builds\br_master\bin\Release;c:\Mantid\external\src\ThirdParty\bin;c:\Mantid\external\src\ThirdParty\mingw;c:\Mantid\external\src\ThirdParty\lib\python2.7;c:\Mantid\external\src\ThirdParty\lib\qt5\plugins;c:\Mantid\external\src\ThirdParty\lib\qt4\bin;c:\Mantid\external\src\ThirdParty\lib\qt5\bin;c:\Mantid\external\src\ThirdParty\lib\qt4\lib;c:\Mantid\external\src\ThirdParty\lib\qt5\lib;
+PYTHONPATH=c:\Mantid\_builds\br_master\bin\Release;c:\Mantid\scripts;c:\mprogs\DirectInelasticUserScripts\MARI;c:\Mantid\Framework\PythonInterface;c:\Mantid\qt\applications\workbench;c:\Mantid\qt\widgets;c:\Mantid\qt\python;c:\Mantid\external\src\ThirdParty\lib;c:\Mantid\external\src\ThirdParty\lib\python2.7;c:\Mantid\scripts\Inelastic\Direct;c:\Mantid\Testing\SystemTests\scripts;c:\Mantid\Testing\SystemTests\scripts\performance;c:\Mantid\Testing\SystemTests\lib\systemtests;c:\Mantid\Testing\SystemTests\tests\analysis;c:\mprogs\DirectInelasticUserScripts\ISIS\qtiGenie;</Environment>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
     <IsWindowsApplication>False</IsWindowsApplication>
-    <DebugStdLib>False</DebugStdLib>
-    <Environment>PATH=c:\Mantid\_builds\br_master\bin\Release;c:\Mantid\_builds\br_master\bin\Release\PVPlugins\PVPlugins;c:\Mantid\external\src\ThirdParty\bin;c:\Programming\Paraview_Dev\bin\Release;
-PYTHONPATH=c:/Mantid/_builds/br_master/bin/Release;c:/Mantid/_builds/br_master/bin/Release/mantid;c:/Mantid/scripts/Inelastic;c:\Mantid\Testing\SystemTests\lib\systemtests;c:\Mantid\Testing\SystemTests\tests\analysis;d:/Data/Mantid_ScriptRepo_eqPublicRepo/direct_inelastic/ISIS/qtiGenie</Environment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,10 +32,21 @@ PYTHONPATH=c:/Mantid/_builds/br_master/bin/Release;c:/Mantid/_builds/br_master/b
   </PropertyGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
-    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
-  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
-  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>2.7</Version>
+      <Description>env (Python 2.7 (64-bit))</Description>
+      <InterpreterPath>c:\Mantid\external\src\ThirdParty\lib\python2.7\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>c:\Mantid\external\src\ThirdParty\lib\python2.7\python.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DirectReductionHelpersTest.py" />
+  </ItemGroup>
   <!-- Uncomment the CoreCompile target to enable the Build command in
        Visual Studio and specify your pre- and post-build commands in
        the BeforeBuild and AfterBuild targets below. -->
@@ -42,4 +55,5 @@ PYTHONPATH=c:/Mantid/_builds/br_master/bin/Release;c:/Mantid/_builds/br_master/b
   </Target>
   <Target Name="AfterBuild">
   </Target>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>
