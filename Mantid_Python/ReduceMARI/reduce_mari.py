@@ -15,7 +15,9 @@ except:
     pass
 
 # Run number and Ei
-runno=21461 #'live'
+Load('MAR21334_fixed.nxs',OutputWorkspace='live')
+runno=mtd['live'] #'live'
+
 sum_runs=False
 ei=50
 
