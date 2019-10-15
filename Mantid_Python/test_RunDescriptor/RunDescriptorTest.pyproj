@@ -15,8 +15,8 @@
     <LaunchProvider>Standard Python launcher</LaunchProvider>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
     <IsWindowsApplication>False</IsWindowsApplication>
-    <Environment>PATH=c:\Mantid\_builds\br_14456\bin\Release;c:\Mantid\_builds\br_14456\bin\Release\PVPlugins\PVPlugins;c:\Mantid\external\src\ThirdParty\bin;c:\Programming\Paraview_Dev\bin\Release;
-PYTHONPATH=c:/Mantid/_builds/br_14456/bin/Release;c:/Mantid/_builds/br_14456/bin/Release/mantid;c:/Mantid/scripts/Inelastic;d:/Data/Mantid_ScriptRepo_eqPublicRepo/direct_inelastic/ISIS/qtiGenie</Environment>
+    <Environment>PATH=c:\Mantid\_builds\br_master\bin\Release;c:\Mantid\external\src\ThirdParty\bin;c:\Mantid\external\src\ThirdParty\mingw;c:\Mantid\external\src\ThirdParty\lib\python2.7;c:\Mantid\external\src\ThirdParty\lib\qt5\plugins;c:\Mantid\external\src\ThirdParty\lib\qt4\bin;c:\Mantid\external\src\ThirdParty\lib\qt5\bin;c:\Mantid\external\src\ThirdParty\lib\qt4\lib;c:\Mantid\external\src\ThirdParty\lib\qt5\lib;
+PYTHONPATH=c:\Mantid\_builds\br_master\bin\Release;c:\Mantid\scripts;c:\mprogs\DirectInelasticUserScripts\MARI;c:\Mantid\Framework\PythonInterface;c:\Mantid\qt\applications\workbench;c:\Mantid\qt\widgets;c:\Mantid\qt\python;c:\Mantid\external\src\ThirdParty\lib;c:\Mantid\external\src\ThirdParty\lib\python2.7;c:\Mantid\scripts\Inelastic\Direct;c:\Mantid\Testing\SystemTests\scripts;c:\Mantid\Testing\SystemTests\scripts\performance;c:\Mantid\Testing\SystemTests\lib\systemtests;c:\Mantid\Testing\SystemTests\tests\analysis;c:\mprogs\DirectInelasticUserScripts\ISIS\qtiGenie;</Environment>
     <InterpreterPath>c:\Mantid\external\src\ThirdParty\lib\python2.7\python.exe</InterpreterPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -29,10 +29,7 @@ PYTHONPATH=c:/Mantid/_builds/br_14456/bin/Release;c:/Mantid/_builds/br_14456/bin
   </PropertyGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
-    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
-  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
-  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
        Visual Studio and specify your pre- and post-build commands in
        the BeforeBuild and AfterBuild targets below. -->
@@ -41,4 +38,5 @@ PYTHONPATH=c:/Mantid/_builds/br_14456/bin/Release;c:/Mantid/_builds/br_14456/bin
   </Target>
   <Target Name="AfterBuild">
   </Target>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>

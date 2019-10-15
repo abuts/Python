@@ -7,11 +7,11 @@ the sub-process used for running the tests in the regular way
 
 import sys
 import os
-os.environ["PATH"] = r"c:\\mprogs\\MantidNightlyInstall\\bin;c:\\mprogs\\MantidNightlyInstall\\lib\\paraview-5.4\\site-packages;c:\\mprogs\\MantidNightlyInstall\\lib\\paraview-5.4\\site-packages\\vtk"+os.environ["PATH"]
-sys.path.append('c:\\mprogs\\MantidNightlyInstall\\bin')
-sys.path.append('c:\\Users\\abuts\\Documents\\Developing_soft\\Mantid\\Mantid_dev\\Testing\\SystemTests\\lib\\systemtests')
-sys.path.append('c:\\Users\\abuts\\Documents\\Developing_soft\\Mantid\\Mantid_dev\\Testing\\SystemTests\\tests\\analysis')
-sys.path.append('c:\\Users\\abuts\\Documents\\developing_soft\\Mantid\Mantid_dev\\scripts\\Inelastic')
+#os.environ["PATH"] = r"c:\\mprogs\\MantidNightlyInstall\\bin;c:\\mprogs\\MantidNightlyInstall\\lib\\paraview-5.4\\site-packages;c:\\mprogs\\MantidNightlyInstall\\lib\\paraview-5.4\\site-packages\\vtk"+os.environ["PATH"]
+#sys.path.append('c:\\mprogs\\MantidNightlyInstall\\bin')
+sys.path.append(r'c:\Mantid\Testing\SystemTests\lib\systemtests')
+sys.path.append(r'c:\Mantid\Testing\SystemTests\tests\analysis')
+#sys.path.append('c:\\Users\\abuts\\Documents\\developing_soft\\Mantid\Mantid_dev\\scripts\\Inelastic')
 print sys.path
 from mantid.simpleapi import *
 from mantid import config
@@ -74,7 +74,7 @@ modlToRun = ['ISISDirectInelastic']
 #testToRun = ['MARIReductionFromFile','MARIReductionSum']
 #testToRun = ['MARIReductionFromWorkspace','MARIReductionFromFile','MARIReductionSum','MAPSDgreduceReduction','LETReduction','LETReductionEvent2015Multirep','MERLINReduction']
 #testToRun = ['LETReductionEvent2015Multirep']
-testToRun = ['MARIReductionFromFileCache','MARIReductionWaitAndSum']
+testToRun = ['MARIReductionFromFile']
 #testToRun = ['DirectInelasticDiagnostic']
 #,
 #testToRun = ['ISIS_ReductionWebLike','ISIS_ReductionWrapperValidate']

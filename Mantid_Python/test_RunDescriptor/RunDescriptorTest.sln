@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "RunDescriptorTest", "RunDescriptorTest.pyproj", "{26B5F999-0DAB-421B-8108-F5F37D50287F}"
 EndProject
 Global
@@ -14,5 +16,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98E7E942-2BB7-4ACE-A34F-ECE0777B9A65}
 	EndGlobalSection
 EndGlobal

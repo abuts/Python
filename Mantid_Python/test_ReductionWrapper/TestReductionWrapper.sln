@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "TestReductionWrapper", "TestReductionWrapper.pyproj", "{A2DB5394-E3F2-40F4-85E1-DF9D6F07D8C2}"
 EndProject
 Global
@@ -14,5 +16,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E9F50DB5-516F-484B-811C-8F81DC641CCC}
 	EndGlobalSection
 EndGlobal
