@@ -1,7 +1,7 @@
 import os
 from mantid.simpleapi import *
 wk_folder = os.path.dirname(os.path.realpath(__file__))
-data_file = os.path.join(wk_folder,'mccode.h5')
+data_file = os.path.join(wk_folder,'mccode_rod3D.h5')
 instr_file = os.path.join(wk_folder,'MUSHROOM_Definition.xml')
 config['instrument.view.geometry'] = 'Neutronic'
 
@@ -19,5 +19,6 @@ instrument_view2.show()
 
 ConvertUnits(InputWorkspace='EventData_mccode', OutputWorkspace='EventData_mccodeE', Target='DeltaE', EMode='Indirect', AlignBins=True, ConvertFromPointData=False)
 Rebin(InputWorkspace='EventData_mccodeE', OutputWorkspace='EventData_mccodeE', Params='-0.2,0.01,3', IgnoreBinErrors=True)
-SaveNXSPE('EventData_mccodeE','oneD_test.nxspe')
+SaveNXSPE('EventData_mccodeE','oneDRod_test.nxspe')
+
 

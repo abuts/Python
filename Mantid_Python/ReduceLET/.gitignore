@@ -1,0 +1,8 @@
+*.nxs
+*.nxspe
+*.map
+*.msk
+Backup/
+.vs/
+env/
+.vscode/
