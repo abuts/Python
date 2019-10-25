@@ -1,7 +1,7 @@
 wk_dir = pwd;
 %ef_file = fullfile(wk_dir,'det_Ef.dat');
 ef_file = fullfile(wk_dir,'det_positions.dat');
-spe_file = fullfile(wk_dir,'dE2_test.nxspe');
+spe_file = fullfile(wk_dir,'MushroomSingleDE.nxspe');
 sqw_file = fullfile(wk_dir,'dE2_test.sqw');
 fid = fopen(ef_file,'r');
 clOb = onCleanup(@()fclose(fid));
@@ -36,21 +36,27 @@ psi = 0;
 
 
 % Create sqw file
-  gen_sqw ({spe_file,spe_file}, '', sqw_file, Data, emode, alatt, angdeg,...
+%rh = rundatah.gen_runfiles(spe_file,'', Data, emode, alatt, angdeg,...
+%            u, v, psi, omega, dpsi, gl, gs);
+%rh = rh{1};
+%sq = rh.calc_sqw([1,1,1,1]);
+gen_sqw (spe_file, '', sqw_file,Data , emode, alatt, angdeg,...
             u, v, psi, omega, dpsi, gl, gs,'replicate') %,...
 %            [1,1,1,1],[-1,-1,-1,0;3,3,3,6]);
-% u=[1,0,0];
+
+sq = read_sqw(sqw_file);
+u=[0,0,1];
 v=[0,1,0];
-w2e = cut_sqw(sqw_file,struct('u',u,'v',v),[0,0.01,3],[0,1.5],[0,1.1],[0,0.02,6]);
+w2e = cut_sqw(sq,struct('u',u,'v',v),[0,0.01,3],[0,1.5],[0,1.1],[0,0.06,6]);
 plot(w2e)
 keep_figure
-w2xy = cut_sqw(sqw_file,struct('u',u,'v',v),[0,3],[0,0.01,1.5],[0,0.01,1.1],[0,6]);
+w2xy = cut_sqw(sq,struct('u',u,'v',v),[0,3],[0,0.02,1.5],[0,0.01,1.1],[0,6]);
 plot(w2xy)
 keep_figure
-w2xz = cut_sqw(sqw_file,struct('u',u,'v',v),[0,0.01,3],[0,1.5],[0,0.01,1.1],[0,6]);
+w2xz = cut_sqw(sq,struct('u',u,'v',v),[0,0.01,3],[0,1.5],[0,0.01,1.1],[0,6]);
 plot(w2xz)
 keep_figure
-w2yz = cut_sqw(sqw_file,struct('u',u,'v',v),[0,0.01,3],[0,0.01,1.5],[0,1.1],[0,6]);
+w2yz = cut_sqw(sq,struct('u',u,'v',v),[0,0.01,3],[0,0.01,1.5],[0,1.1],[0,6]);
 plot(w2yz)
 keep_figure
 
