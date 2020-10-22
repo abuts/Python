@@ -14,12 +14,13 @@
     <IsWindowsApplication>False</IsWindowsApplication>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
     <CommandLineArguments />
-    <InterpreterPath>c:\Mantid\external\src\ThirdParty\lib\python2.7\python.exe</InterpreterPath>
+    <InterpreterPath>c:\Mantid\external\src\ThirdParty\lib\python3.8\python.exe</InterpreterPath>
     <InterpreterArguments />
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
-    <Environment>PATH=c:\Mantid\_builds\br_master\bin\Release;c:\Mantid\external\src\ThirdParty\bin;c:\Mantid\external\src\ThirdParty\mingw;c:\Mantid\external\src\ThirdParty\lib\python2.7;c:\Mantid\external\src\ThirdParty\lib\qt5\plugins;c:\Mantid\external\src\ThirdParty\lib\qt4\bin;c:\Mantid\external\src\ThirdParty\lib\qt5\bin;c:\Mantid\external\src\ThirdParty\lib\qt4\lib;c:\Mantid\external\src\ThirdParty\lib\qt5\lib;
-PYTHONPATH=c:\Mantid\_builds\br_master\bin\Release;c:\Mantid\scripts;c:\mprogs\DirectInelasticUserScripts\MARI;c:\Mantid\Framework\PythonInterface;c:\Mantid\qt\applications\workbench;c:\Mantid\qt\widgets;c:\Mantid\qt\python;c:\Mantid\external\src\ThirdParty\lib;c:\Mantid\external\src\ThirdParty\lib\python2.7;c:\Mantid\scripts\Inelastic\Direct;c:\Mantid\Testing\SystemTests\scripts;c:\Mantid\Testing\SystemTests\scripts\performance;c:\Mantid\Testing\SystemTests\lib\systemtests;c:\Mantid\Testing\SystemTests\tests\analysis;c:\mprogs\DirectInelasticUserScripts\ISIS\qtiGenie;</Environment>
-    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <Environment>PATH=c:\mprogs\MantidBuild\bin\Release;c:\Mantid\external\src\ThirdParty\bin;c:\Mantid\external\src\ThirdParty\bin\mingw;c:\Mantid\external\src\ThirdParty\lib\python3.8;c:\Mantid\external\src\ThirdParty\lib\qt5\plugins;c:\Mantid\external\src\ThirdParty\lib\qt4\bin;c:\Mantid\external\src\ThirdParty\lib\qt5\bin;c:\Mantid\external\src\ThirdParty\lib\qt4\bin;c:\Mantid\external\src\ThirdParty\lib\qt5\lib;
+PYTHONPATH=c:\mprogs\MantidBuild\bin\Release;c:\Mantid\scripts;C:/Mantid/external/src/ThirdParty/lib/python3.8\Lib\site-packages\PyQt4; C:\mprogs\MantidRelease\lib\paraview-5.4\site-packages;C:\mprogs\MantidRelease\lib\paraview-5.4\site-packages\vtk; c:\Mantid\qt\applications\workbench\workbench;c:\Mantid\qt\widgets;c:\Mantid\qt\python;c:\Mantid\scripts\Inelastic\Direct; c:\mprogs\DirectInelasticUserScripts\MARI;c:\Mantid\Testing\SystemTests\scripts;c:\Mantid\Testing\SystemTests\scripts\performance;c:\Mantid\Testing\SystemTests\lib\systemtests;c:\Mantid\Testing\SystemTests\tests\analysis;c:\mprogs\DirectInelasticUserScripts\ISIS\qtiGenie;
+</Environment>
+    <InterpreterId>MSBuild|env1|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -37,6 +38,15 @@ PYTHONPATH=c:\Mantid\_builds\br_master\bin\Release;c:\Mantid\scripts;c:\mprogs\D
     <Compile Include="reduce_mari.py" />
   </ItemGroup>
   <ItemGroup>
+    <Interpreter Include="env1\">
+      <Id>env1</Id>
+      <Version>3.7</Version>
+      <Description>env1 (Python 3.7 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
     <Interpreter Include="env\">
       <Id>env</Id>
       <Version>2.7</Version>

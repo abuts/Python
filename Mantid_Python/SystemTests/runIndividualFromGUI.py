@@ -7,12 +7,13 @@ the sub-process used for running the tests in the regular way
 
 import sys
 import os
+import importlib
 #os.environ["PATH"] = r"c:\\mprogs\\MantidNightlyInstall\\bin;c:\\mprogs\\MantidNightlyInstall\\lib\\paraview-5.4\\site-packages;c:\\mprogs\\MantidNightlyInstall\\lib\\paraview-5.4\\site-packages\\vtk"+os.environ["PATH"]
 #sys.path.append('c:\\mprogs\\MantidNightlyInstall\\bin')
 sys.path.append(r'c:\Mantid\Testing\SystemTests\lib\systemtests')
-sys.path.append(r'c:\Mantid\Testing\SystemTests\tests\analysis')
+sys.path.append(r'c:\Mantid\Testing\SystemTests\tests\framework')
 #sys.path.append('c:\\Users\\abuts\\Documents\\developing_soft\\Mantid\Mantid_dev\\scripts\\Inelastic')
-print sys.path
+print(sys.path)
 from mantid.simpleapi import *
 from mantid import config
 import inspect
@@ -74,7 +75,7 @@ modlToRun = ['ISISDirectInelastic']
 #testToRun = ['MARIReductionFromFile','MARIReductionSum']
 #testToRun = ['MARIReductionFromWorkspace','MARIReductionFromFile','MARIReductionSum','MAPSDgreduceReduction','LETReduction','LETReductionEvent2015Multirep','MERLINReduction']
 #testToRun = ['LETReductionEvent2015Multirep']
-testToRun = ['MARIReductionFromFile']
+testToRun = ['MARIReductionWaitAndSum']
 #testToRun = ['DirectInelasticDiagnostic']
 #,
 #testToRun = ['ISIS_ReductionWebLike','ISIS_ReductionWrapperValidate']
@@ -85,7 +86,7 @@ testToRun = ['MARIReductionFromFile']
 for mod_name in modlToRun:
 
     module = __import__(mod_name )
-    reload(module)
+    importlib.reload(module)
     clear_test_list = False
 
     if len(testToRun) == 0:
@@ -103,13 +104,14 @@ for mod_name in modlToRun:
             testClass = getattr(module, className)()
             testClass.runTest()
             outcome = testClass.doValidation()
-            print 'Test result: ' + str(outcome)
+            print('Test result: ' + str(outcome))
         except:
             exc_type, exc_value, exc_traceback = sys.exc_info()
-            print 'Test: {0} thrown exception: {1} '.format(className,exc_type)
-            print 'Reason: {0}'.format(exc_value)
+            print('Test: {0} thrown exception: {1} '.format(className,exc_type))
+            print('Reason: {0}'.format(exc_value))
+
         #os.chdir(this_dir)
-        #raise
+        raise
 
     if clear_test_list:
         testToRun=[]

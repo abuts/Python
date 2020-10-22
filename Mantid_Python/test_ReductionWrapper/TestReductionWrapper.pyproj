@@ -13,11 +13,12 @@
     <Name>TestReductionWrapper</Name>
     <RootNamespace>TestReductionWrapper</RootNamespace>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <InterpreterPath>c:\Mantid\external\src\ThirdParty\lib\python2.7\python.exe</InterpreterPath>
+    <InterpreterPath>c:\Mantid\external\src\ThirdParty\lib\python3.8\python.exe </InterpreterPath>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
     <IsWindowsApplication>True</IsWindowsApplication>
-    <Environment>PATH=c:\Mantid\_builds\br_master\bin\Release;c:\Mantid\external\src\ThirdParty\bin;c:\Mantid\external\src\ThirdParty\mingw;c:\Mantid\external\src\ThirdParty\lib\python2.7;c:\Mantid\external\src\ThirdParty\lib\qt5\plugins;c:\Mantid\external\src\ThirdParty\lib\qt4\bin;c:\Mantid\external\src\ThirdParty\lib\qt5\bin;c:\Mantid\external\src\ThirdParty\lib\qt4\lib;c:\Mantid\external\src\ThirdParty\lib\qt5\lib;
-PYTHONPATH=c:\Mantid\_builds\br_master\bin\Release;c:\Mantid\scripts;c:\mprogs\DirectInelasticUserScripts\MARI;c:\Mantid\Framework\PythonInterface;c:\Mantid\qt\applications\workbench;c:\Mantid\qt\widgets;c:\Mantid\qt\python;c:\Mantid\external\src\ThirdParty\lib;c:\Mantid\external\src\ThirdParty\lib\python2.7;c:\Mantid\scripts\Inelastic\Direct;c:\Mantid\Testing\SystemTests\scripts;c:\Mantid\Testing\SystemTests\scripts\performance;c:\Mantid\Testing\SystemTests\lib\systemtests;c:\Mantid\Testing\SystemTests\tests\analysis;c:\mprogs\DirectInelasticUserScripts\ISIS\qtiGenie;</Environment>
+    <Environment>PATH=c:\mprogs\MantidBuild\bin\Release;c:\Mantid\external\src\ThirdParty\bin;c:\Mantid\external\src\ThirdParty\bin\mingw;c:\Mantid\external\src\ThirdParty\lib\python3.8;c:\Mantid\external\src\ThirdParty\lib\qt5\plugins;c:\Mantid\external\src\ThirdParty\lib\qt4\bin;c:\Mantid\external\src\ThirdParty\lib\qt5\bin;c:\Mantid\external\src\ThirdParty\lib\qt4\bin;c:\Mantid\external\src\ThirdParty\lib\qt5\lib;
+PYTHONPATH=c:\mprogs\MantidBuild\bin\Release;c:\Mantid\scripts;C:/Mantid/external/src/ThirdParty/lib/python3.8\Lib\site-packages\PyQt4;C:\mprogs\MantidRelease\lib\paraview-5.4\site-packages;C:\mprogs\MantidRelease\lib\paraview-5.4\site-packages\vtk;c:\Mantid\qt\applications\workbench\workbench;c:\Mantid\qt\widgets;c:\Mantid\qt\python;c:\Mantid\scripts\Inelastic\Direct;c:\mprogs\DirectInelasticUserScripts\MARI;c:\Mantid\Testing\SystemTests\scripts;c:\Mantid\Testing\SystemTests\scripts\performance;c:\Mantid\Testing\SystemTests\lib\systemtests;c:\Mantid\Testing\SystemTests\tests\analysis;c:\mprogs\DirectInelasticUserScripts\ISIS\qtiGenie;
+</Environment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
