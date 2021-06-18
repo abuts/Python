@@ -30,7 +30,7 @@ import inspect
 #sys.path.append(stressmodule_dir)
 
 
-data_dir='c:/Users/abuts/Documents/developing_soft/Mantid/Mantid_TestData'
+data_dir=r'c:\Users\abuts\Documents\developing_soft\Mantid\Mantid_TestData'
 #data_dir2=''C:/Backup/Backup_folder1/work/code/Mantid/git/mantid/Test/systemtests/Data/LOQ'
 
 #maps_dir = 'd:/Data/MantidSystemTests/Data'
@@ -75,7 +75,7 @@ modlToRun = ['ISISDirectInelastic']
 #testToRun = ['MARIReductionFromFile','MARIReductionSum']
 #testToRun = ['MARIReductionFromWorkspace','MARIReductionFromFile','MARIReductionSum','MAPSDgreduceReduction','LETReduction','LETReductionEvent2015Multirep','MERLINReduction']
 #testToRun = ['LETReductionEvent2015Multirep']
-testToRun = ['MARIReductionWaitAndSum']
+testToRun = ['MARIReductionFromFileCache']
 #testToRun = ['DirectInelasticDiagnostic']
 #,
 #testToRun = ['ISIS_ReductionWebLike','ISIS_ReductionWrapperValidate']
@@ -109,9 +109,9 @@ for mod_name in modlToRun:
             exc_type, exc_value, exc_traceback = sys.exc_info()
             print('Test: {0} thrown exception: {1} '.format(className,exc_type))
             print('Reason: {0}'.format(exc_value))
-
-        #os.chdir(this_dir)
-        raise
+            #os.chdir(this_dir)
+            raise
+    #os.chdir(this_dir)
 
     if clear_test_list:
         testToRun=[]

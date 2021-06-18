@@ -49,7 +49,11 @@ class ReduceMARI(ReductionWrapper):
         prop['monovan_mapfile'] = "mari_res.map"
         prop['hard_mask_file'] = "mar11015.msk"
         prop['det_cal_file'] = 11060
-        prop['save_format'] = ''
+        prop['save_format'] = 'nxspe'
+        prop['normalise_method'] = 'current'
+        # the workspace, containing empty instrument background to remove from all runs
+        prop['empty_bg_run'] = 28053
+        prop['empty_bg_run_for_wb'] = 28053
         # Uncomment two following properties to correct for absorption
         # on sample or sample container during the experiment.
         # 1) Define the sample material and sample shape:
@@ -298,7 +302,7 @@ def main(input_file=None, output_directory=None):
     return output_folder
 
 
-if __name__ == "__main__" or __name__ == "__builtin__":
+if __name__ == "__main__" or __name__ == "__builtin__" or __name__ == "mantidqt.widgets.codeeditor.execution":
     # -------------------------------------------------------------------------------------------------#
     # SECTION USED TO RUN REDUCTION FROM MANTID SCRIPT WINDOW #
     # -------------------------------------------------------------------------------------------------#

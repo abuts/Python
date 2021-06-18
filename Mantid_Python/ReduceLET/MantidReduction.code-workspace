@@ -1,0 +1,14 @@
+{
+
+	"folders": [
+		{
+
+			"path": "."
+		}
+	],
+	"settings": 
+	{
+		"python.pythonPath": "c:\\mprogs\\MantidNightlyInstall\\bin\\python.exe",
+		"python.envFile": "${workspaceFolder}/MantidPython.env"
+	}
+}
