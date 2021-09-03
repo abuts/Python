@@ -28,14 +28,21 @@ def peak_pos(ws,x_min,x_max,ws_ind):
     dx = (x[1:]-x[0:-1])
     x0 = 0.5*(x[1:]+x[0:-1])
 
-    Norm = 0.5*np.sum(dx*y)
+    Norm = np.sum(dx*y)
     fy = y/Norm
     print('Norm(fy) = ',np.sum(fy))
     
     peak_pos = np.sum(x0*fy)
+    DeleteWorkspace(ws_work)
     return peak_pos
     
-ws = mtd['MAR28050_monitors']
-peak = peak_pos(ws,3500,3800,2)
-print('peak position = ',peak)
+ws = mtd['MAP41449_monitors']
+peak1 = peak_pos(ws,2780,2880,2)
+peak2 = peak_pos(ws,5000,6000,3)
+print('MAP positions : peak1={0}; peak2={1}'.format(peak1,peak2))
+    
+ws = mtd['MER53574_monitors']
+peak1 = peak_pos(ws,2750,2800,3)
+peak2 = peak_pos(ws,4000,4710,7)
+print('MER positions : peak1={0}; peak2={1}'.format(peak1,peak2))
     
