@@ -1,5 +1,8 @@
 *.suo
 *.pyc
+*.nxs
+*.raw
+
 /LiteKeys/LiteKeysCommon/Release
 /LiteKeys/Debug
 Debug
