@@ -34,9 +34,7 @@ QT_PLUGIN_PATH=c:\Users\wkc26243\.conda\envs\mantid-developer\Library\plugins</E
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="DirectEnergyConversion.py" />
     <Compile Include="MAPS_reduction.py" />
-    <Compile Include="ReductionWrapper.py" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="CondaEnv|CondaEnv|mantid-developer" />
