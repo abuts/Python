@@ -5,21 +5,22 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>43269ed2-7b01-47bb-a583-575e7b8c7289</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>d:\Data\Mantid_Testing\2017\maps\MAPSReduction_Sample.py</StartupFile>
-    <SearchPath>d:\Data\MantidDevArea\script_repo_mantid\direct_inelastic\ISIS\qtiGenie</SearchPath>
+    <StartupFile>c:\Users\wkc26243\Documents\DEVELOPMENT\MantidPython\Mantid_Python\ReduceMaps\MAPS_reduction.py</StartupFile>
+    <SearchPath>D:\programming\MantidInstall\bin;d:\programming\MantidInstall\bin\python310.zip;d:\programming\MantidInstall\bin\DLLs;d:\programming\MantidInstall\bin\lib;d:\programming\MantidInstall\scripts</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>reduceMaps</Name>
     <RootNamespace>reduceMaps</RootNamespace>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
     <CommandLineArguments />
-    <InterpreterPath>c:/mprogs/MantidInstall/bin/python.exe</InterpreterPath>
+    <InterpreterPath>
+    </InterpreterPath>
     <InterpreterArguments />
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
     <IsWindowsApplication>False</IsWindowsApplication>
-    <Environment>PATH=c:/mprogs/MantidInstall/bin;c:/mprogs/MantidInstall/plugins;;c:/mprogs/MantidInstall/PVPlugins;%PATH%
-PYTHONPATH=c:/mprogs/MantidInstall/bin;c:/mprogs/MantidInstall/plugins;c:/mprogs/MantidInstall/PVPlugins;c:/mprogs/MantidInstall/scripts/Inelastic;c:\Mantid\Testing\SystemTests\lib\systemtests;c:\Mantid\Testing\SystemTests\tests\analysis
-MPLBACKEND=qt4agg</Environment>
+    <Environment>PATH=D:\programming\MantidInstall\bin;d:\programming\MantidInstall\bin\DLLs;d:\programming\MantidInstall\plugins;d:\programming\MantidInstall\plugins\qt5;d:\programming\MantidInstall\plugins\qt5\imageformats;d:\programming\MantidInstall\plugins\qt5\platforms;d:\programming\MantidInstall\plugins\qt5\styles;d:\programming\MantidInstall\plugins\qt5\printsupport;d:\programming\MantidInstall\plugins\qt5\sqldrivers
+QT_PLUGIN_PATH=c:\Users\wkc26243\.conda\envs\mantid-developer\Library\plugins</Environment>
+    <InterpreterId>Global|VisualStudio|MantidInstall</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,13 +32,16 @@ MPLBACKEND=qt4agg</Environment>
   </PropertyGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
-    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="d:\Data\MantidDevArea\script_repo_mantid\direct_inelastic\MAPS\MAPSReduction_Sample.py">
-      <Link>iliad_merlin_eventmode.py</Link>
-    </Compile>
+    <Compile Include="DirectEnergyConversion.py" />
+    <Compile Include="MAPS_reduction.py" />
+    <Compile Include="ReductionWrapper.py" />
   </ItemGroup>
-  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|mantid-developer" />
+    <InterpreterReference Include="Global|VisualStudio|bin" />
+    <InterpreterReference Include="Global|VisualStudio|MantidInstall" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>
